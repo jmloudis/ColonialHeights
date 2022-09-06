@@ -5,12 +5,11 @@
 - clone this repo and open with your favorite IDE ( I use Intellij for Backend & WebStorm for Frontend )
 - Make sure to cd to the current file directory whether you are using the Frontend or Backend 
 - For example: installing node modules in frontend
-- ```
-# in terminal 
 
-/eCommerce
-cd /FE
-/eCommerce/FE npm install 
+```
+- /eCommerce: cd /FE
+- /eCommerce/FE: npm install
+
 ```
 
 ## Backend ##
