@@ -26,7 +26,7 @@ spring.datasource.password = pass
 ```
 
 - Make sure you have SQL server installed on your computer otherwise install SQL Server & MySQL Workbench
-- run main method in 
+- run main method to start application
 
 ## Frontend ##
 - Install node modules using `npm install --legacy-peer-deps`
