@@ -1,0 +1,8 @@
+<div class="cart-area d-n checkout float-xs-right">
+  <a routerLink="/cart-details" *ngIf="totalQuantity != 0">
+    <div class="total">{{totalPrice | currency:"USD"}}
+      <span>{{totalQuantity}}</span>
+    </div>
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+  </a>
+</div>

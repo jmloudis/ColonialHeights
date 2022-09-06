@@ -1,0 +1,63 @@
+<div class="main-content" >
+  <div class="section-content section-content-p30" style="width: 100%;">
+    <div class="container-fluid checkout-desc">
+
+      <div *ngIf="cartItems.length > 0">
+
+
+      <table class="cart-table" style="width: 100%; text-align: center; margin-top: 20px">
+        <thead class="hidden">
+        <tr class="cart-tr">
+
+
+          <th >Product Image</th>
+          <th >Product Detail</th>
+          <th ></th>
+
+          <th >Product Total Price</th>
+
+        </tr>
+        </thead>
+
+        <tbody >
+        <tr *ngFor="let item of cartItems">
+          <td>
+            <img [src]="item.imageUrl" style="max-width: 120px"/>
+          </td>
+          <td class="cart-item-info">
+            <p id="item-name">{{item.name}}</p>
+            <p id="item-price">{{item.unitPrice | currency:"USD"}} - {{item.quantity}}</p>
+          </td>
+          <td class="cart-remove-item">
+            <a routerLink="/cart-details" class="delete-button" (click)="remove(item)">Remove</a>
+          </td>
+          <td class="cart-item-price">
+<!--            <div class="items">-->
+<!--              <label>Quantity:</label> {{item.quantity}}-->
+<!--            </div>-->
+            <p >{{item.quantity * item.unitPrice | currency:"USD"}}</p>
+          </td>
+
+        </tr>
+
+        </tbody>
+
+
+      </table>
+      <div id="checkout-basket">
+        <h4 id="subtotal">Subtotal: {{totalPrice | currency:"USD"}}</h4>
+
+      </div>
+
+      </div>
+
+      <div *ngIf="cartItems.length == 0" class="alert alert-warning col-md-12" role="alert">
+        Your Shopping Cart is Empty
+
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

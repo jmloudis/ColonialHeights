@@ -1,0 +1,76 @@
+<div class="detail-section">
+<!--  <div class="section-content section-content-p30">-->
+  <div class="container-fluid product-desc">
+<!--    <p style="margin-top: 100px; margin-left: 200px">{{product.name}}</p>-->
+
+    <div class="details-image-big detail-img" (click)="zoom()" >
+<!--      <img [src]="product.imageUrl"/>-->
+
+      <div (mouseover)="showButton = true" (mouseout)="isClicked = false" (click)="isClicked = true" >
+      <ng-img-magnifier
+
+        thumbImage="{{product.imageUrl}}"
+        fullImage="{{product.imageUrl}}"
+        top="15"
+        right="10"
+        lensWidth="150"
+        lensHeight="150"
+        resultWidth="35"
+        resultHeight="55"
+        imgWidth="800"
+        imgHeight="800"
+      >
+      </ng-img-magnifier>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="detail-description">
+
+    <h1 class="details-title">{{product.name}}</h1>
+    <h3 class="price details-price">{{product.unitPrice | currency:"USD"}}</h3>
+      <div>
+        <hr />
+      </div>
+      <div class="detail-description-bullets">
+        <ul *ngFor="let pd of productDescription">
+          <li>{{pd}}</li>
+        </ul>
+<!--        <p>{{product.description}}</p>-->
+      </div>
+
+      <hr class="hr-detail" />
+
+      <div class="select-details input-group">
+
+        <select class="form-select select-option-details" name="my-select" (change)="selectChange()">
+<!--          <option  [value]="item.id" *ngFor="let item of book">-->
+<!--            {{item.title}}-->
+<!--          </option>-->
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+          <option>XL</option>
+          <option>XXL</option>
+          <option>XXXL</option>
+
+        </select>
+          <span class="button-atc" >
+            <button href="#" (click)="addToCart(product)" class="btn btn-outline-secondary add-to-cart">Add To Cart</button>
+          </span>
+
+
+      </div>
+
+<!--      <a href="#" class="primary-btn">Add To Cart</a>-->
+
+    </div>
+    </div>
+<!--  </div>-->
+
+</div>
+
+

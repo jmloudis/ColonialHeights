@@ -1,0 +1,62 @@
+<div class="main-content">
+  <div class="section-content section-content-p30">
+
+<!--    <h4>Category: {{currentCategoryName}}</h4>-->
+<!--    <hr/>-->
+    <div class="container-fluid" infiniteScroll
+         [infiniteScrollDistance]="1"
+         [infiniteScrollThrottle]="500"
+         (scrolled)="onScroll()" >
+      <div class="row">
+
+<!--        Loop of products array -->
+        <div *ngFor="let p of products" class="col-md-3">
+          <div class="product-box">
+            <div class="text-image">
+              <a routerLink="/products/{{p.id}}" style="text-decoration: none">
+                <img [src]="p.imageUrl" class="img-responsive" />
+              </a>
+              <div class="caption">
+                <a routerLink="/products/{{p.id}}" style="text-decoration: none">
+                <h3>{{p.name}}</h3>
+                <div class="price">
+                  <h3>{{p.unitPrice | currency:"USD"}}</h3>
+                </div>
+                </a>
+              </div>
+            </div>
+
+            <!--              <h1>{{p.name}}</h1>-->
+<!--              <div class="price">{{p.unitPrice | currency:"USD"}}</div>-->
+<!--            <a href="#" class="primary-btn">Add to cart</a>-->
+          </div>
+
+        </div>
+
+
+      </div>
+<!--      Pagination example-->
+
+      <div class="footer-pagination">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-9" style="padding-left: 30%">
+
+                <ngb-pagination [(page)]="pageNumber" [pageSize]="pageSize" [collectionSize]="totalElements" [maxSize]="5" (pageChange)="listProducts()" (click)="scrollTop()">
+
+                </ngb-pagination>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+<!--      End pagination-->
+    </div>
+  </div>
+</div>
