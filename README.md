@@ -3,7 +3,15 @@
 
 # Getting started
 - clone this repo and open with your favorite IDE ( I use Intellij for Backend & WebStorm for Frontend )
-- When using different IDE's make sure to cd to the current file directory
+- Make sure to cd to the current file directory whether you are using the Frontend or Backend 
+- For example: installing node modules in frontend
+- ```
+# in terminal 
+
+/eCommerce
+cd /FE
+/eCommerce/FE npm install 
+```
 
 ## Backend ##
 - Change username, password & database name in application.properties 
