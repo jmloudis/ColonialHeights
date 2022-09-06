@@ -4,11 +4,11 @@
 # Getting started
 - clone this repo and open with your favorite IDE ( I use Intellij for Backend & WebStorm for Frontend )
 - Make sure to cd to the current file directory whether you are using the Frontend or Backend 
-- For example: installing node modules in frontend
+- For example: installing dependencies in frontend
 
 ```
 /eCommerce: cd /FE
-/eCommerce/FE: npm install
+/eCommerce/FE: npm install --legacy-peer-deps
 ```
 
 ## Backend ##
@@ -28,5 +28,5 @@ spring.datasource.password = pass
 - run main method to start application
 
 ## Frontend ##
-- Install node modules using `npm install --legacy-peer-deps`
+- Install dependencies using `npm install --legacy-peer-deps`
 - Use npm start to run the application 
