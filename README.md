@@ -6,6 +6,14 @@
 
 ## Backend ##
 - Change username, password & database name in application.properties 
+- `
+ 
+#change to - SQL username
+spring.datasource.username = root
+
+#change to - SQL password
+spring.datasource.password = pass
+`
 - Make sure you have SQL server installed on your computer otherwise install SQL Server & MySQL Workbench
 - run main method in 
 
