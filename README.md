@@ -7,5 +7,7 @@
 ## Backend ##
 - Change username, password & database name in application.properties 
 - Make sure you have SQL server installed on your computer otherwise install SQL Server & MySQL Workbench
+- run main method in 
 
 ## Frontend ##
+- Install node modules using `npm install --legacy-peer-deps`
