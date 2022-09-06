@@ -3,11 +3,14 @@
 
 # Getting started
 - clone this repo and open with your favorite IDE ( I use Intellij for Backend & WebStorm for Frontend )
+- When using different IDE's make sure to cd to the current file directory
 
 ## Backend ##
 - Change username, password & database name in application.properties 
 
 ```
+# application.properties file 
+
 #change to - SQL username
 spring.datasource.username = root
 
@@ -20,3 +23,4 @@ spring.datasource.password = pass
 
 ## Frontend ##
 - Install node modules using `npm install --legacy-peer-deps`
+- Use npm start to run the application 
