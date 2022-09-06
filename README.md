@@ -7,9 +7,8 @@
 - For example: installing node modules in frontend
 
 ```
-- /eCommerce: cd /FE
-- /eCommerce/FE: npm install
-
+/eCommerce: cd /FE
+/eCommerce/FE: npm install
 ```
 
 ## Backend ##
