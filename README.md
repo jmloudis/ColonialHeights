@@ -6,8 +6,7 @@
 
 ## Backend ##
 - Change username, password & database name in application.properties 
-- `
- 
+`
 #change to - SQL username
 spring.datasource.username = root
 
