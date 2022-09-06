@@ -7,8 +7,8 @@
 - For example: installing dependencies in frontend
 
 ```
-/eCommerce: cd /FE
-/eCommerce/FE: npm install --legacy-peer-deps
+/eCommerce> cd /FE
+/eCommerce/FE> npm install --legacy-peer-deps
 ```
 
 ## Backend ##
