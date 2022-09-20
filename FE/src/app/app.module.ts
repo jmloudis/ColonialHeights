@@ -15,6 +15,8 @@ import {NgxImgZoomModule} from "ngx-img-zoom";
 import {NgxImageZoomModule} from "ngx-image-zoom";
 import { CartStatusComponent } from './cart/cart-status/cart-status.component';
 import { CartDetailsComponent } from './cart/cart-details/cart-details.component';
+import { CheckoutComponent } from './cart/checkout/checkout.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { CartDetailsComponent } from './cart/cart-details/cart-details.component
     ProductCategoryMenuComponent,
     ProductDetailsComponent,
     CartStatusComponent,
-    CartDetailsComponent
+    CartDetailsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
@@ -31,8 +34,10 @@ import { CartDetailsComponent } from './cart/cart-details/cart-details.component
     HttpClientModule,
     InfiniteScrollModule,
     NgbModule,
+    ReactiveFormsModule,
     ImgMagnifier,
-    NgxImgZoomModule
+    NgxImgZoomModule,
+
 
   ],
   providers: [],

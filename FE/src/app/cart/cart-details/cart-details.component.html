@@ -22,7 +22,7 @@
         <tbody >
         <tr *ngFor="let item of cartItems">
           <td>
-            <img [src]="item.imageUrl" style="max-width: 120px"/>
+            <img [src]="item.imageUrl" style="max-width: 120px" alt="image"/>
           </td>
           <td class="cart-item-info">
             <p id="item-name">{{item.name}}</p>
@@ -46,8 +46,9 @@
       </table>
       <div id="checkout-basket">
         <h4 id="subtotal">Subtotal: {{totalPrice | currency:"USD"}}</h4>
-
+          <a routerLink="/checkout" class="btn btn-outline-primary" style="margin-top: 20px">Checkout</a>
       </div>
+
 
       </div>
 
