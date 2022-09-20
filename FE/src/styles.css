@@ -328,6 +328,7 @@ input.au-input.au-input-xl{
 }
 
 .au-btn-submit>i{
+
   font-size:20px;
   color:#fff;
   position:absolute;
@@ -376,9 +377,9 @@ input.au-input.au-input-xl{
   -moz-box-align:center;
   -ms-flex-align:center;
   align-items:center;
-  -webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
-  -moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
-  box-shadow:0 2px 5px 0 rgba(0,0,0,.1);
+  /*-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);*/
+  /*-moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.1);*/
+  /*box-shadow:0 2px 5px 0 rgba(0,0,0,.1);*/
   /*border-right:1px solid #1B2430;*/
   background:#ffffff;
   position:relative;
@@ -563,7 +564,8 @@ input.au-input.au-input-xl{
   background:#fff
 }
 .main-content.page-m{
-  padding:10% 15%!important
+  /*padding:10% 15%!important*/
+  padding: 10% 30% 10% 5%;
 }
 
 /*
@@ -661,17 +663,17 @@ input.au-input.au-input-xl{
  */
 
 .form-area{
-  background:#e5e5e5;
+  background:#fff;
   position:relative;
   margin-bottom:45px;
   padding:50px 20px;
-  border:3px solid #ccc
+  border:3px solid #fff
 }
 .form-area h3{
   position:absolute;
   top:-26px;
   left:13px;
-  background:#e5e5e5;
+  background:#ffffff;
   padding:10px 20px;
   font-weight:500;
   z-index:23;
@@ -680,19 +682,30 @@ input.au-input.au-input-xl{
 .input-space{
   margin-bottom:20px
 }
+
+
 .input-space label{
   padding-left:31px;
   font-size:14px;
-  margin-bottom:50px
+  margin-bottom:50px;
 }
-.input-space input[type=text]{
+
+.row label{
+  color: black;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.input-space input[type=text]
+{
   width:100%;
   height:40px;
-  border-radius:30px;
+  /*border-radius:30px;*/
   outline:0;
   padding:10px;
-  border:1px solid #ccc
+  border:1px solid #1B2430;
 }
+
 .input-space select{
   width:100%;
   height:40px;
@@ -742,9 +755,11 @@ input.au-input.au-input-xl{
 .au-checkbox input:checked~.au-checkmark:after{
   display:block
 }
+
 label.date{
   padding-top:8px
 }
+
 .au-checkbox .au-checkmark:after{
   left:5px;
   top:-1px;
@@ -766,6 +781,12 @@ option:first{
 }
 select{
   color:#828482
+}
+
+.form-area p{
+  margin-top: 20px;
+  color: black;
+
 }
 
 /*
