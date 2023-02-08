@@ -9,9 +9,9 @@ import {ProductCategory} from "../products/product-category";
 })
 export class ProductService {
 
-  private baseUrl: string = "http://localhost:8080/products";
+  private baseUrl: string = "http://localhost:8081/products";
 
-  private categoryUrl = "http://localhost:8080/product-category"
+  private categoryUrl = "http://localhost:8081/product-category"
 
   private size = "&size=100";
 

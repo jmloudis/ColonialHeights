@@ -2,6 +2,7 @@ package com.loudis.colonielheightsshop.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.loudis.colonielheightsshop.enumeration.Size;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -24,6 +25,8 @@ public class Product
     private boolean active;
     private int unitsInStock;
 
+    private Size size;
+
     // private String color;
 
     @CreationTimestamp
@@ -40,7 +43,7 @@ public class Product
     public Product() {
     }
 
-    public Product(Long id, String sku, String name, String description, Double unitPrice, String imageUrl, boolean active, int unitsInStock, Date dateCreated, Date lastUpdated, ProductCategory category) {
+    public Product(Long id, String sku, String name, String description, Double unitPrice, String imageUrl, boolean active, int unitsInStock, Date dateCreated, Date lastUpdated, ProductCategory category, Size size) {
         this.id = id;
         this.sku = sku;
         this.name = name;
@@ -52,6 +55,7 @@ public class Product
         this.dateCreated = dateCreated;
         this.lastUpdated = lastUpdated;
         this.category = category;
+        this.size = size;
     }
 
     public Long getId() {
@@ -142,4 +146,8 @@ public class Product
     public void setCategory(ProductCategory category) {
         this.category = category;
     }
+
+    public Size getSize() {return size;}
+
+    public void setSize(Size size) {this.size = size;}
 }

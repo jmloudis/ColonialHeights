@@ -33,8 +33,7 @@ public class CheckoutServiceImpl implements CheckoutService {
 //        // initialize Stripe API with secret key
 //        Stripe.apiKey = secretKey;
 //    }
-
-
+    
     @Autowired
     public CheckoutServiceImpl(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;

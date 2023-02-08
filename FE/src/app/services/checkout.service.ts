@@ -8,7 +8,7 @@ import {Observable} from "rxjs";
 })
 export class CheckoutService {
 
-  private purchaseurl = "http://localhost:8080/api/checkout/purchase";
+  private purchaseurl = "http://localhost:8081/api/checkout/purchase";
 
   constructor(private httpClient: HttpClient) { }
 

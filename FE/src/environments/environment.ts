@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  stripePublicApiKey: "enter public key here"
+  stripePublicApiKey: "pk_test_51K8rgmLdV8n2PoMPJ5xo2kAqsxz57d38lyjdCfX6oSLZO0v9LhSo1mAc8W3CYz4LBRIwolMMq50thF9QyfN2cQTR008sTvL0Gn"
 };
 
 /*

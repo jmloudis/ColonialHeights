@@ -7,6 +7,8 @@ import com.loudis.colonielheightsshop.entity.ProductCategory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/admin")
 public class AdminController
@@ -36,6 +38,12 @@ public class AdminController
     {
         this.productRepository.deleteById(id);
         System.out.println("Product " + id + " has been deleted");
+    }
+
+    @GetMapping("/products-all")
+    public List<Product>  getProducts()
+    {
+        return this.productRepository.findAll();
     }
 
 }

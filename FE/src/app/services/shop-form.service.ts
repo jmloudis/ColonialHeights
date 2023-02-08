@@ -9,8 +9,8 @@ import {State} from "../model/state";
 })
 export class ShopFormService {
 
-  private countriesUrl = 'http://localhost:8080/countries';
-  private statesUrl = 'http://localhost:8080/states';
+  private countriesUrl = 'http://localhost:8081/countries';
+  private statesUrl = 'http://localhost:8081/states';
 
   constructor(private httpClient: HttpClient) { }
 
